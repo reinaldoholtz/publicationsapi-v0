@@ -13,4 +13,4 @@ EXPOSE 8080
 
 COPY --from=build ./app/target/*.jar ./applicationpub.jar
 
-ENTRYPOINT [ "java", "-jar", "app.jar" ]
+ENTRYPOINT [ "java", "-jar", "applicationpub.jar" ]
