@@ -11,6 +11,6 @@ FROM openjdk:17-jdk-slim
 
 EXPOSE 8080
 
-COPY --from=build ./app/target/*.jar ./applicationpub.jar
+COPY --from=build ./target/*.jar ./applicationpub.jar
 
 ENTRYPOINT [ "java", "-jar", "applicationpub.jar" ]
